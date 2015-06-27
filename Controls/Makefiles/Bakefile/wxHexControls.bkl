@@ -1,0 +1,22 @@
+toolsets = vs2013;
+
+vs2013.solutionfile = ../VC12/wxHexControls.sln;
+
+library wxHexControls
+{
+    archs = x86 x86_64;
+
+    includedirs += ../../../Include/wxHexControls;
+
+    outputdir = ../../../Lib/$(arch);
+
+    if ($(config) == Debug)
+    {
+        basename = wxHexControls-d;
+    }
+
+    headers
+    {
+        ../../../Include/wxHexControls/wxHexControls.h
+    }
+}
