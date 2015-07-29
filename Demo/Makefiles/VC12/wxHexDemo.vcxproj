@@ -84,9 +84,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\wxHexDemoApp.cpp" />
+    <ClCompile Include="..\..\Source\wxHexDemoFrame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Source\wxHexDemoApp.h" />
+    <ClInclude Include="..\..\Source\wxHexDemoFrame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

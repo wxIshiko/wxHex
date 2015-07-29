@@ -20,17 +20,9 @@
 	IN THE SOFTWARE.
 */
 
-#ifndef _WXHEX_DEMO_WXHEXDEMOAPP_H_
-#define _WXHEX_DEMO_WXHEXDEMOAPP_H_
+#include "wxHexDemoFrame.h"
 
-#include <wx/app.h>
-
-class wxHexDemoApp : public wxApp
+wxHexDemoFrame::wxHexDemoFrame(const wxString& title)
+	: wxFrame(NULL, wxID_ANY, title)
 {
-public:
-	wxHexDemoApp();
-
-	virtual bool OnInit();
-};
-
-#endif
+}

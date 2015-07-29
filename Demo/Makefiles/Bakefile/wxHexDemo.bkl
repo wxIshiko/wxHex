@@ -21,10 +21,12 @@ program wxHexDemo : wxHexControls
     headers
     {
         ../../Source/wxHexDemoApp.h
+        ../../Source/wxHexDemoFrame.h
     }
 
     sources
     {
         ../../Source/wxHexDemoApp.cpp
+        ../../Source/wxHexDemoFrame.cpp
     }
 }

@@ -20,9 +20,15 @@
     <ClInclude Include="..\..\Source\wxHexDemoApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\wxHexDemoFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\wxHexDemoApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\wxHexDemoFrame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
