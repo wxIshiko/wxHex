@@ -1,0 +1,11 @@
+setting WXHEX_ROOT
+{
+    help = "Path to the wxHex installation";
+    default = '$(WXHEX)';
+}
+
+template wxHexControls
+{
+    includedirs += $(WXHEX_ROOT)/Include;
+    libdirs += $(WXHEX_ROOT)/Lib/$(arch);
+}
