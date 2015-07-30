@@ -21,8 +21,38 @@
 */
 
 #include "wxHexDemoFrame.h"
+#include "wxHexControls/wxHexControls.h"
+#include <wx/menu.h>
+#include <wx/sizer.h>
 
 wxHexDemoFrame::wxHexDemoFrame(const wxString& title)
 	: wxFrame(NULL, wxID_ANY, title)
 {
+	CreateMenuBar();
+
+	wxHexEditCtrl* control = new wxHexEditCtrl(this, wxID_ANY, wxDefaultPosition, wxSize(300, 200));
+
+	wxBoxSizer* topSizer = new wxBoxSizer(wxHORIZONTAL);
+	topSizer->Add(control, 1, wxEXPAND);
+	SetSizerAndFit(topSizer);
 }
+
+void wxHexDemoFrame::CreateMenuBar()
+{
+	wxMenuBar* menuBar = new wxMenuBar;
+
+	wxMenu* menuFile = new wxMenu;
+	menuFile->Append(wxID_EXIT);
+	menuBar->Append(menuFile, "&File");
+
+	SetMenuBar(menuBar);
+}
+
+void wxHexDemoFrame::OnExit(wxCommandEvent& evt)
+{
+	Close();
+}
+
+wxBEGIN_EVENT_TABLE(wxHexDemoFrame, wxFrame)
+	EVT_MENU(wxID_EXIT, wxHexDemoFrame::OnExit)
+wxEND_EVENT_TABLE()

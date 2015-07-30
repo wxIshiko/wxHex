@@ -4,19 +4,9 @@ toolsets = vs2013;
 
 vs2013.solutionfile = ../VC12/wxHexDemo.sln;
 
-setting WXWIDGETS_ROOT
-{
-    help = "Path to the WxWidgets installation";
-    default = '$(WXWIN)';
-}
-
 program wxHexDemo : wxHexControls
 {
     win32-subsystem = windows;
-
-    includedirs += $(WXWIDGETS_ROOT)/include;
-    includedirs += $(WXWIDGETS_ROOT)/include/msvc;
-    libdirs += $(WXWIDGETS_ROOT)/lib/vc_lib;
 
     headers
     {

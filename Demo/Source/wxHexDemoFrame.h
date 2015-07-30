@@ -30,6 +30,13 @@ class wxHexDemoFrame : public wxFrame
 {
 public:
 	wxHexDemoFrame(const wxString& title);
+
+private:
+	void CreateMenuBar();
+
+	void OnExit(wxCommandEvent& evt);
+
+	wxDECLARE_EVENT_TABLE();
 };
 
 #endif
