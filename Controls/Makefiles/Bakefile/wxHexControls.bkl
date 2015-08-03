@@ -2,11 +2,20 @@ toolsets = vs2013;
 
 vs2013.solutionfile = ../VC12/wxHexControls.sln;
 
+setting WXWIDGETS_ROOT
+{
+    help = "Path to the WxWidgets installation";
+    default = '$(WXWIN)';
+}
+
 library wxHexControls
 {
     archs = x86 x86_64;
 
     includedirs += ../../../Include/wxHexControls;
+
+    includedirs += $(WXWIDGETS_ROOT)/include;
+    includedirs += $(WXWIDGETS_ROOT)/include/msvc;
 
     outputdir = ../../../Lib/$(arch);
 
@@ -18,5 +27,17 @@ library wxHexControls
     headers
     {
         ../../../Include/wxHexControls/wxHexControls.h
+        ../../../Include/wxHexControls/wxHexEditCtrl.h
+        ../../../Include/wxHexControls/wxHexGridCtrl.h
+        ../../../Include/wxHexControls/wxHexOffsetsPanel.h
+        ../../../Include/wxHexControls/wxHexDataPanel.h
+    }
+
+    sources
+    {
+        ../../Source/wxHexEditCtrl.cpp
+        ../../Source/wxHexGridCtrl.cpp
+        ../../Source/wxHexOffsetsPanel.cpp
+        ../../Source/wxHexDataPanel.cpp
     }
 }

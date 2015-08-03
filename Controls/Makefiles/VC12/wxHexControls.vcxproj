@@ -87,7 +87,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
-      <AdditionalIncludeDirectories>..\..\..\Include\wxHexControls</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\Include\wxHexControls;$(WXWIN)\include;$(WXWIN)\include\msvc</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -102,7 +102,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
-      <AdditionalIncludeDirectories>..\..\..\Include\wxHexControls</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\Include\wxHexControls;$(WXWIN)\include;$(WXWIN)\include\msvc</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -119,7 +119,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
-      <AdditionalIncludeDirectories>..\..\..\Include\wxHexControls</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\Include\wxHexControls;$(WXWIN)\include;$(WXWIN)\include\msvc</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -138,7 +138,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
-      <AdditionalIncludeDirectories>..\..\..\Include\wxHexControls</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\Include\wxHexControls;$(WXWIN)\include;$(WXWIN)\include\msvc</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -148,9 +148,18 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\wxHexEditCtrl.cpp" />
+    <ClCompile Include="..\..\Source\wxHexGridCtrl.cpp" />
+    <ClCompile Include="..\..\Source\wxHexOffsetsPanel.cpp" />
+    <ClCompile Include="..\..\Source\wxHexDataPanel.cpp" />
+  </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\wxHexControls\wxHexControls.h" />
+    <ClInclude Include="..\..\..\Include\wxHexControls\wxHexEditCtrl.h" />
+    <ClInclude Include="..\..\..\Include\wxHexControls\wxHexGridCtrl.h" />
+    <ClInclude Include="..\..\..\Include\wxHexControls\wxHexOffsetsPanel.h" />
+    <ClInclude Include="..\..\..\Include\wxHexControls\wxHexDataPanel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
