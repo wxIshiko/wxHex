@@ -23,8 +23,8 @@
 #ifndef _WXHEX_DEMO_WXHEXDEMOFRAME_H_
 #define _WXHEX_DEMO_WXHEXDEMOFRAME_H_
 
+#include "wxHexControls/wxHexControls.h"
 #include <wx/frame.h>
-
 
 class wxHexDemoFrame : public wxFrame
 {
@@ -34,7 +34,12 @@ public:
 private:
 	void CreateMenuBar();
 
+	void OnOpen(wxCommandEvent& evt);
 	void OnExit(wxCommandEvent& evt);
+	void OnAbout(wxCommandEvent& evt);
+
+private:
+	wxHexEditCtrl* m_hexEditCtrl;
 
 	wxDECLARE_EVENT_TABLE();
 };
