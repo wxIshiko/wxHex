@@ -31,6 +31,9 @@ library wxHexControls
         ../../../Include/wxHexControls/wxHexGridCtrl.h
         ../../../Include/wxHexControls/wxHexOffsetsPanel.h
         ../../../Include/wxHexControls/wxHexDataPanel.h
+        ../../../Include/wxHexControls/wxHexData.h
+        ../../../Include/wxHexControls/wxHexDataBuffer.h
+        ../../../Include/wxHexControls/wxHexDataFile.h
     }
 
     sources
@@ -39,5 +42,8 @@ library wxHexControls
         ../../Source/wxHexGridCtrl.cpp
         ../../Source/wxHexOffsetsPanel.cpp
         ../../Source/wxHexDataPanel.cpp
+        ../../Source/wxHexData.cpp
+        ../../Source/wxHexDataBuffer.cpp
+        ../../Source/wxHexDataFile.cpp
     }
 }

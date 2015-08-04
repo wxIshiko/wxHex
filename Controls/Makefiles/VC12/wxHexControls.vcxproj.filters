@@ -32,6 +32,15 @@
     <ClInclude Include="..\..\..\Include\wxHexControls\wxHexDataPanel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\Include\wxHexControls\wxHexData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\wxHexControls\wxHexDataBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Include\wxHexControls\wxHexDataFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\wxHexEditCtrl.cpp">
@@ -44,6 +53,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\wxHexDataPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\wxHexData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\wxHexDataBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\wxHexDataFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

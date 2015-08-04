@@ -153,6 +153,9 @@
     <ClCompile Include="..\..\Source\wxHexGridCtrl.cpp" />
     <ClCompile Include="..\..\Source\wxHexOffsetsPanel.cpp" />
     <ClCompile Include="..\..\Source\wxHexDataPanel.cpp" />
+    <ClCompile Include="..\..\Source\wxHexData.cpp" />
+    <ClCompile Include="..\..\Source\wxHexDataBuffer.cpp" />
+    <ClCompile Include="..\..\Source\wxHexDataFile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Include\wxHexControls\wxHexControls.h" />
@@ -160,6 +163,9 @@
     <ClInclude Include="..\..\..\Include\wxHexControls\wxHexGridCtrl.h" />
     <ClInclude Include="..\..\..\Include\wxHexControls\wxHexOffsetsPanel.h" />
     <ClInclude Include="..\..\..\Include\wxHexControls\wxHexDataPanel.h" />
+    <ClInclude Include="..\..\..\Include\wxHexControls\wxHexData.h" />
+    <ClInclude Include="..\..\..\Include\wxHexControls\wxHexDataBuffer.h" />
+    <ClInclude Include="..\..\..\Include\wxHexControls\wxHexDataFile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
