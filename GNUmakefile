@@ -71,12 +71,12 @@ WXWIDGETS_ROOT ?= $(WXWIN)
 
 all: $(_builddir)build/bakefiles/../../lib$(if $(call _equal,$(config),Debug),wxhexd,wxhex).a
 
-$(_builddir)build/bakefiles/../../lib$(if $(call _equal,$(config),Debug),wxhexd,wxhex).a: $(_builddir)wxhex_wxhexctrl.o
-	$(AR) rcu $@ $(_builddir)wxhex_wxhexctrl.o
+$(_builddir)build/bakefiles/../../lib$(if $(call _equal,$(config),Debug),wxhexd,wxhex).a: $(_builddir)wxhex_wxhexeditctrl.o
+	$(AR) rcu $@ $(_builddir)wxhex_wxhexeditctrl.o
 	$(RANLIB) $@
 
-$(_builddir)wxhex_wxhexctrl.o: include/wx/charts/wxhexctrl.cpp
-	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -Iinclude/wx/hex `wx-config --cxxflags --libs` include/wx/charts/wxhexctrl.cpp
+$(_builddir)wxhex_wxhexeditctrl.o: include/wx/charts/wxhexeditctrl.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -Iinclude/wx/hex `wx-config --cxxflags --libs` include/wx/charts/wxhexeditctrl.cpp
 
 clean:
 	rm -f $(_builddir)*.o
