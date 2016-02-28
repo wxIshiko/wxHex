@@ -1,0 +1,47 @@
+toolsets = gnu vs2015 vs2013;
+
+gnu.makefile = ../../GNUmakefile;
+vs2015.solutionfile = ../msw/wxhex_vc14.sln;
+vs2013.solutionfile = ../msw/wxhex_vc12.sln;
+
+setting WXWIDGETS_ROOT
+{
+    help = "Path to the WxWidgets installation";
+    default = '$(WXWIN)';
+}
+
+library wxhex
+{
+    vs2015.projectfile = ../msw/wxhex_vc14.vcxproj;
+    vs2013.projectfile = ../msw/wxhex_vc12.vcxproj;
+
+    includedirs += ../../include/wx/hex;
+
+    if (($(toolset) == vs2015) || ($(toolset) == vs2013))
+    {
+        includedirs += $(WXWIDGETS_ROOT)/include;
+        includedirs += $(WXWIDGETS_ROOT)/include/msvc;
+        libdirs += $(WXWIDGETS_ROOT)/lib/vc_lib;
+
+        outputdir = ../../lib/vc_lib;
+    }
+    if ($(toolset) == gnu)
+    {
+        cxx-compiler-options = "`wx-config --cxxflags --libs`";
+    }
+
+    if ($(config) == Debug)
+    {
+        basename = wxhexd;
+    }
+
+    headers
+    {
+        ../../include/wx/charts/wxhexctrl.h
+    }
+
+    sources
+    {
+        ../../include/wx/charts/wxhexctrl.cpp
+    }
+}
