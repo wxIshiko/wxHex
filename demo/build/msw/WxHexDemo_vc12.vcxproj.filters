@@ -17,18 +17,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\wxHexDemoApp.h">
+    <ClInclude Include="..\..\src\WxHexDemoApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\wxHexDemoFrame.h">
+    <ClInclude Include="..\..\src\WxHexDemoFrame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\wxHexDemoApp.cpp">
+    <ClCompile Include="..\..\src\WxHexDemoApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\wxHexDemoFrame.cpp">
+    <ClCompile Include="..\..\src\WxHexDemoFrame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
