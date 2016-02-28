@@ -40,6 +40,7 @@ library wxhex
         ../../include/wx/hex/wxhexdata.h
         ../../include/wx/hex/wxhexeditctrl.h
         ../../include/wx/hex/wxhexgridctrl.h
+        ../../include/wx/hex/wxhexoffsetspanel.h
     }
 
     sources
@@ -47,5 +48,6 @@ library wxhex
         ../../src/wxhexdata.cpp
         ../../src/wxhexeditctrl.cpp
         ../../src/wxhexgridctrl.cpp
+        ../../src/wxhexoffsetspanel.cpp
     }
 }

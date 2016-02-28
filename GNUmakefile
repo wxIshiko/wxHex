@@ -71,8 +71,8 @@ WXWIDGETS_ROOT ?= $(WXWIN)
 
 all: $(_builddir)build/bakefiles/../../lib$(if $(call _equal,$(config),Debug),wxhexd,wxhex).a
 
-$(_builddir)build/bakefiles/../../lib$(if $(call _equal,$(config),Debug),wxhexd,wxhex).a: $(_builddir)wxhex_wxhexdata.o $(_builddir)wxhex_wxhexeditctrl.o $(_builddir)wxhex_wxhexgridctrl.o
-	$(AR) rcu $@ $(_builddir)wxhex_wxhexdata.o $(_builddir)wxhex_wxhexeditctrl.o $(_builddir)wxhex_wxhexgridctrl.o
+$(_builddir)build/bakefiles/../../lib$(if $(call _equal,$(config),Debug),wxhexd,wxhex).a: $(_builddir)wxhex_wxhexdata.o $(_builddir)wxhex_wxhexeditctrl.o $(_builddir)wxhex_wxhexgridctrl.o $(_builddir)wxhex_wxhexoffsetspanel.o
+	$(AR) rcu $@ $(_builddir)wxhex_wxhexdata.o $(_builddir)wxhex_wxhexeditctrl.o $(_builddir)wxhex_wxhexgridctrl.o $(_builddir)wxhex_wxhexoffsetspanel.o
 	$(RANLIB) $@
 
 $(_builddir)wxhex_wxhexdata.o: src/wxhexdata.cpp
@@ -83,6 +83,9 @@ $(_builddir)wxhex_wxhexeditctrl.o: src/wxhexeditctrl.cpp
 
 $(_builddir)wxhex_wxhexgridctrl.o: src/wxhexgridctrl.cpp
 	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -Iinclude/wx/hex `wx-config --cxxflags --libs` src/wxhexgridctrl.cpp
+
+$(_builddir)wxhex_wxhexoffsetspanel.o: src/wxhexoffsetspanel.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -Iinclude/wx/hex `wx-config --cxxflags --libs` src/wxhexoffsetspanel.cpp
 
 clean:
 	rm -f $(_builddir)*.o
