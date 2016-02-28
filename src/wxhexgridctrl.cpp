@@ -20,7 +20,7 @@
 	IN THE SOFTWARE.
 */
 
-#include "wxHexGridCtrl.h"
+#include "wxhexgridctrl.h"
 #include <wx/sizer.h>
 
 wxHexGridCtrl::wxHexGridCtrl(wxWindow* parent,
@@ -52,7 +52,7 @@ bool wxHexGridCtrl::AcceptsFocus() const
 	return false;
 }
 
-void wxHexGridCtrl::SetData(std::shared_ptr<wxHexData>& data)
+void wxHexGridCtrl::SetData(wxSharedPtr<wxHexData>& data)
 {
 	m_offsets->Init(data->GetLength());
 	m_data->Init(data);

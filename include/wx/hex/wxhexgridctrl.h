@@ -1,5 +1,5 @@
 /*
-	Copyright (c) 2015 Xavier Leclercq
+	Copyright (c) 2015-2016 Xavier Leclercq
 
 	Permission is hereby granted, free of charge, to any person obtaining a
 	copy of this software and associated documentation files (the "Software"),
@@ -20,15 +20,15 @@
 	IN THE SOFTWARE.
 */
 
-#ifndef _WXHEX_CONTROLS_WXHEXGRIDCTRL_H_
-#define _WXHEX_CONTROLS_WXHEXGRIDCTRL_H_
+#ifndef _WX_HEX_WXHEXGRIDCTRL_H_
+#define _WX_HEX_WXHEXGRIDCTRL_H_
 
-#include "wxHexData.h"
-#include "wxHexOffsetsPanel.h"
-#include "wxHexDataPanel.h"
+#include "wxhexdata.h"
+#include "wxhexoffsetspanel.h"
+#include "wxhexdatapanel.h"
 #include <wx/scrolwin.h>
 #include <wx/panel.h>
-#include <memory>
+#include <wx/sharedptr.h>
 
 class wxHexGridCtrl : public wxScrolledWindow
 {
@@ -40,7 +40,7 @@ public:
 	
 	virtual bool AcceptsFocus() const;
 
-	void SetData(std::shared_ptr<wxHexData>& data);
+	void SetData(wxSharedPtr<wxHexData>& data);
 
 	void OnChar(wxKeyEvent &evt);
 
