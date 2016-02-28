@@ -42,6 +42,6 @@ library wxhex
 
     sources
     {
-        ../../include/wx/hex/wxhexeditctrl.cpp
+        ../../src/wxhexeditctrl.cpp
     }
 }

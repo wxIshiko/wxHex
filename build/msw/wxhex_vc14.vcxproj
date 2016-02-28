@@ -83,7 +83,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\include\wx\hex\wxhexeditctrl.cpp" />
+    <ClCompile Include="..\..\src\wxhexeditctrl.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\wx\hex\wxhexeditctrl.h" />

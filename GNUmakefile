@@ -75,8 +75,8 @@ $(_builddir)build/bakefiles/../../lib$(if $(call _equal,$(config),Debug),wxhexd,
 	$(AR) rcu $@ $(_builddir)wxhex_wxhexeditctrl.o
 	$(RANLIB) $@
 
-$(_builddir)wxhex_wxhexeditctrl.o: include/wx/hex/wxhexeditctrl.cpp
-	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -Iinclude/wx/hex `wx-config --cxxflags --libs` include/wx/hex/wxhexeditctrl.cpp
+$(_builddir)wxhex_wxhexeditctrl.o: src/wxhexeditctrl.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -Iinclude/wx/hex `wx-config --cxxflags --libs` src/wxhexeditctrl.cpp
 
 clean:
 	rm -f $(_builddir)*.o

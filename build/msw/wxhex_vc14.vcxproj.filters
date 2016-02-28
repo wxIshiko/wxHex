@@ -22,7 +22,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\include\wx\hex\wxhexeditctrl.cpp">
+    <ClCompile Include="..\..\src\wxhexeditctrl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -2,5 +2,6 @@
 *.opensdf
 *.sdf
 *.suo
+*.opendb
 Debug/
 Release/
