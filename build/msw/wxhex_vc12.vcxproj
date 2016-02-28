@@ -83,10 +83,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\include\wx\charts\wxhexeditctrl.cpp" />
+    <ClCompile Include="..\..\include\wx\hex\wxhexeditctrl.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\wx\charts\wxhexeditctrl.h" />
+    <ClInclude Include="..\..\include\wx\hex\wxhexeditctrl.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

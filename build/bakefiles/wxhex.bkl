@@ -37,11 +37,11 @@ library wxhex
 
     headers
     {
-        ../../include/wx/charts/wxhexeditctrl.h
+        ../../include/wx/hex/wxhexeditctrl.h
     }
 
     sources
     {
-        ../../include/wx/charts/wxhexeditctrl.cpp
+        ../../include/wx/hex/wxhexeditctrl.cpp
     }
 }

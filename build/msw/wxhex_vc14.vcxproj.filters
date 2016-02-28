@@ -17,12 +17,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\include\wx\charts\wxhexeditctrl.h">
+    <ClInclude Include="..\..\include\wx\hex\wxhexeditctrl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\include\wx\charts\wxhexeditctrl.cpp">
+    <ClCompile Include="..\..\include\wx\hex\wxhexeditctrl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
