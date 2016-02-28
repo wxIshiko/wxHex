@@ -20,7 +20,7 @@
     <ClInclude Include="..\..\include\wx\hex\wxhexeditctrl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\include\wx\hex\wxhexgridctrl.cpp">
+    <ClInclude Include="..\..\include\wx\hex\wxhexgridctrl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

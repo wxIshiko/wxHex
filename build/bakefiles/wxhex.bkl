@@ -38,7 +38,7 @@ library wxhex
     headers
     {
         ../../include/wx/hex/wxhexeditctrl.h
-        ../../include/wx/hex/wxhexgridctrl.cpp
+        ../../include/wx/hex/wxhexgridctrl.h
     }
 
     sources
