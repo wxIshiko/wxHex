@@ -83,10 +83,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\wxhexdata.cpp" />
     <ClCompile Include="..\..\src\wxhexeditctrl.cpp" />
     <ClCompile Include="..\..\src\wxhexgridctrl.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\wx\hex\wxhexdata.h" />
     <ClInclude Include="..\..\include\wx\hex\wxhexeditctrl.h" />
     <ClInclude Include="..\..\include\wx\hex\wxhexgridctrl.h" />
   </ItemGroup>

@@ -37,12 +37,14 @@ library wxhex
 
     headers
     {
+        ../../include/wx/hex/wxhexdata.h
         ../../include/wx/hex/wxhexeditctrl.h
         ../../include/wx/hex/wxhexgridctrl.h
     }
 
     sources
     {
+        ../../src/wxhexdata.cpp
         ../../src/wxhexeditctrl.cpp
         ../../src/wxhexgridctrl.cpp
     }
