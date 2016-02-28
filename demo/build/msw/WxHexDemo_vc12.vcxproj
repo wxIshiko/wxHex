@@ -84,12 +84,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\WxHexDemoApp.cpp" />
-    <ClCompile Include="..\..\src\WxHexDemoFrame.cpp" />
+    <ClCompile Include="..\..\src\wxhexdemoapp.cpp" />
+    <ClCompile Include="..\..\src\wxhexdemoframe.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\WxHexDemoApp.h" />
-    <ClInclude Include="..\..\src\WxHexDemoFrame.h" />
+    <ClInclude Include="..\..\src\wxhexdemoapp.h" />
+    <ClInclude Include="..\..\src\wxhexdemoframe.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -31,13 +31,13 @@ program WxHexDemo
 
     headers
     {
-        ../../src/WxHexDemoApp.h
-        ../../src/WxHexDemoFrame.h
+        ../../src/wxhexdemoapp.h
+        ../../src/wxhexdemoframe.h
     }
 
     sources
     {
-        ../../src/WxHexDemoApp.cpp
-        ../../src/WxHexDemoFrame.cpp
+        ../../src/wxhexdemoapp.cpp
+        ../../src/wxhexdemoframe.cpp
     }
 }
