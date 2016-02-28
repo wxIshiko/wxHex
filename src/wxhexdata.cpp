@@ -1,5 +1,5 @@
 /*
-	Copyright (c) 2015 Xavier Leclercq
+	Copyright (c) 2015-2016 Xavier Leclercq
 
 	Permission is hereby granted, free of charge, to any person obtaining a
 	copy of this software and associated documentation files (the "Software"),
@@ -20,7 +20,7 @@
 	IN THE SOFTWARE.
 */
 
-#include "wxHexData.h"
+#include "wxhexdata.h"
 
 static const size_t s_bufferSize = 0x4000;
 static const size_t s_bufferShift = 14;
@@ -32,7 +32,7 @@ wxHexData::wxHexData()
 
 wxHexData::~wxHexData()
 {
-	for (std::map<size_t, unsigned char*>::iterator it = m_cache.begin();
+	for (wxHexDataCache::iterator it = m_cache.begin();
 		 it != m_cache.end();
 		 ++it)
 	{
@@ -59,7 +59,7 @@ void wxHexData::GetBytes(size_t pos, size_t count, unsigned char* buffer)
 	}
 
 	size_t alignedPos = pos >> s_bufferShift;
-	std::map<size_t, unsigned char*>::const_iterator it = m_cache.find(alignedPos);
+    wxHexDataCache::const_iterator it = m_cache.find(alignedPos);
 	if (it == m_cache.end())
 	{
 		unsigned char* newBuffer = new unsigned char[s_bufferSize];
