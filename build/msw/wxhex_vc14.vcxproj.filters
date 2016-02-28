@@ -20,9 +20,15 @@
     <ClInclude Include="..\..\include\wx\hex\wxhexeditctrl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\wx\hex\wxhexgridctrl.cpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\wxhexeditctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wxhexgridctrl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

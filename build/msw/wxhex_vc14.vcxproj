@@ -84,9 +84,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\wxhexeditctrl.cpp" />
+    <ClCompile Include="..\..\src\wxhexgridctrl.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\wx\hex\wxhexeditctrl.h" />
+    <ClInclude Include="..\..\include\wx\hex\wxhexgridctrl.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

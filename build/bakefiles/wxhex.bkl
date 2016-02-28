@@ -38,10 +38,12 @@ library wxhex
     headers
     {
         ../../include/wx/hex/wxhexeditctrl.h
+        ../../include/wx/hex/wxhexgridctrl.cpp
     }
 
     sources
     {
         ../../src/wxhexeditctrl.cpp
+        ../../src/wxhexgridctrl.cpp
     }
 }
