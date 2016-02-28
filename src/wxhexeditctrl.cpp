@@ -1,5 +1,5 @@
 /*
-	Copyright (c) 2015 Xavier Leclercq
+	Copyright (c) 2015-2016 Xavier Leclercq
 
 	Permission is hereby granted, free of charge, to any person obtaining a
 	copy of this software and associated documentation files (the "Software"),
@@ -20,7 +20,7 @@
 	IN THE SOFTWARE.
 */
 
-#include "wxHexEditCtrl.h"
+#include "wxhexeditctrl.h"
 #include <wx/sizer.h>
 #include <wx/stattext.h>
 #include <wx/textctrl.h>
@@ -46,7 +46,7 @@ wxHexEditCtrl::wxHexEditCtrl(wxWindow* parent,
 	SetSizerAndFit(topSizer);
 }
 
-void wxHexEditCtrl::SetData(std::shared_ptr<wxHexData>& data)
+void wxHexEditCtrl::SetData(wxSharedPtr<wxHexData> data)
 {
 	m_hexGridCtrl->SetData(data);
 }
