@@ -23,7 +23,7 @@
 #ifndef _WXHEX_DEMO_WXHEXDEMOFRAME_H_
 #define _WXHEX_DEMO_WXHEXDEMOFRAME_H_
 
-#include "wxHexControls/wxHexControls.h"
+#include "wx/hex/wxhex.h"
 #include <wx/frame.h>
 
 class wxHexDemoFrame : public wxFrame
@@ -40,6 +40,7 @@ private:
 
 private:
 	wxHexEditCtrl* m_hexEditCtrl;
+	wxSharedPtr<wxHexData> m_data;
 
 	wxDECLARE_EVENT_TABLE();
 };

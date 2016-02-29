@@ -20,8 +20,8 @@
 	IN THE SOFTWARE.
 */
 
-#include "wxHexDemoApp.h"
-#include "wxHexDemoFrame.h"
+#include "wxhexdemoapp.h"
+#include "wxhexdemoframe.h"
 
 wxIMPLEMENT_APP(wxHexDemoApp);
 

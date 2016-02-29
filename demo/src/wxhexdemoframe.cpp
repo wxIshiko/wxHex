@@ -20,7 +20,7 @@
 	IN THE SOFTWARE.
 */
 
-#include "wxHexDemoFrame.h"
+#include "wxhexdemoframe.h"
 #include <wx/menu.h>
 #include <wx/sizer.h>
 #include <wx/filedlg.h>
@@ -60,7 +60,8 @@ void wxHexDemoFrame::OnOpen(wxCommandEvent& evt)
 	if (fileDialog->ShowModal() == wxID_OK)
 	{
 		wxString selectedFile = fileDialog->GetPath();
-		m_hexEditCtrl->SetDocument(selectedFile);
+		m_data = new wxHexDataFile(selectedFile);
+		m_hexEditCtrl->SetData(m_data);
 	}
 
 	fileDialog->Destroy();
