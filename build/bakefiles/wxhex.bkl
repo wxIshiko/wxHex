@@ -38,6 +38,7 @@ library wxhex
     headers
     {
         ../../include/wx/hex/wxhexdata.h
+        ../../include/wx/hex/wxhexdatabuffer.h
         ../../include/wx/hex/wxhexdatapanel.h
         ../../include/wx/hex/wxhexeditctrl.h
         ../../include/wx/hex/wxhexgridctrl.h
@@ -47,6 +48,7 @@ library wxhex
     sources
     {
         ../../src/wxhexdata.cpp
+        ../../src/wxhexdatabuffer.cpp
         ../../src/wxhexdatapanel.cpp
         ../../src/wxhexeditctrl.cpp
         ../../src/wxhexgridctrl.cpp

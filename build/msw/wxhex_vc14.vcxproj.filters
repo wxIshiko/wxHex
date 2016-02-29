@@ -20,6 +20,9 @@
     <ClInclude Include="..\..\include\wx\hex\wxhexdata.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\wx\hex\wxhexdatabuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\include\wx\hex\wxhexdatapanel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -35,6 +38,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\wxhexdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wxhexdatabuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\wxhexdatapanel.cpp">
