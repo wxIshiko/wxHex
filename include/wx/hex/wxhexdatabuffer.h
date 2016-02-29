@@ -1,5 +1,5 @@
 /*
-	Copyright (c) 2015 Xavier Leclercq
+	Copyright (c) 2015-2016 Xavier Leclercq
 
 	Permission is hereby granted, free of charge, to any person obtaining a
 	copy of this software and associated documentation files (the "Software"),
@@ -20,7 +20,19 @@
 	IN THE SOFTWARE.
 */
 
-#ifndef _WXHEX_CONTROLS_WXHEXDATABUFFER_H_
-#define _WXHEX_CONTROLS_WXHEXDATABUFFER_H_
+#ifndef _WX_HEX_WXHEXDATABUFFER_H_
+#define _WX_HEX_WXHEXDATABUFFER_H_
+
+#include "wxHexData.h"
+
+class wxHexDataBuffer : public wxHexData
+{
+public:
+	wxHexDataBuffer();
+	virtual ~wxHexDataBuffer();
+
+	virtual size_t GetLength() const;
+	virtual void DoGetBytes(size_t pos, size_t count, unsigned char* buffer);
+};
 
 #endif

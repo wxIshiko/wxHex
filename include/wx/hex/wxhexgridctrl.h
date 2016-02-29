@@ -40,7 +40,7 @@ public:
 	
 	virtual bool AcceptsFocus() const;
 
-	void SetData(wxSharedPtr<wxHexData>& data);
+	void SetData(wxSharedPtr<wxHexData> data);
 
 	void OnChar(wxKeyEvent &evt);
 

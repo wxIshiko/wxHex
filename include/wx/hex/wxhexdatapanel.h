@@ -1,5 +1,5 @@
 /*
-	Copyright (c) 2015 Xavier Leclercq
+	Copyright (c) 2015-2016 Xavier Leclercq
 
 	Permission is hereby granted, free of charge, to any person obtaining a
 	copy of this software and associated documentation files (the "Software"),
@@ -20,7 +20,40 @@
 	IN THE SOFTWARE.
 */
 
-#ifndef _WXHEX_CONTROLS_WXHEXDATAPANEL_H_
-#define _WXHEX_CONTROLS_WXHEXDATAPANEL_H_
+#ifndef _WX_HEX_WXHEXDATAPANEL_H_
+#define _WX_HEX_WXHEXDATAPANEL_H_
+
+#include "wxhexdata.h"
+#include <wx/panel.h>
+#include <wx/caret.h>
+#include <wx/sharedptr.h>
+
+class wxHexDataPanel : public wxPanel
+{
+public:
+	wxHexDataPanel(wxWindow* parent,
+		size_t increment);
+
+	void Init(wxSharedPtr<wxHexData> data);
+
+	virtual wxSize GetMinSize() const;
+
+private:
+	void OnPaint(wxPaintEvent& evt);
+	void OnChar(wxKeyEvent &evt);
+
+private:
+	wxSharedPtr<wxHexData> m_data;
+	size_t m_startOffset;
+	size_t m_increment;
+	size_t m_leftMargin;
+	size_t m_rightMargin;
+	size_t m_topMargin;
+	size_t m_bottomMargin;
+	size_t m_lineHeight;
+	size_t m_count;
+	
+	wxDECLARE_EVENT_TABLE();
+};
 
 #endif
