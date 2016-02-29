@@ -1,5 +1,5 @@
 /*
-	Copyright (c) 2015 Xavier Leclercq
+	Copyright (c) 2015-2016 Xavier Leclercq
 
 	Permission is hereby granted, free of charge, to any person obtaining a
 	copy of this software and associated documentation files (the "Software"),
@@ -20,15 +20,17 @@
 	IN THE SOFTWARE.
 */
 
-#ifndef _WXHEX_CONTROLS_WXHEXCONTROLS_H_
-#define _WXHEX_CONTROLS_WXHEXCONTROLS_H_
+#ifndef _WX_HEX_WXHEX_H_
+#define _WX_HEX_WXHEX_H_
 
-#include "wxHexEditCtrl.h"
+#include "wxhexeditctrl.h"
+#include "wxhexdatabuffer.h"
+#include "wxhexdatafile.h"
 
 #ifdef _DEBUG
-#pragma comment(lib, "wxHexControls-d.lib")
+#pragma comment(lib, "wxhexd.lib")
 #else
-#pragma comment(lib, "wxHexControls.lib")
+#pragma comment(lib, "wxhex.lib")
 #endif
 
 #endif

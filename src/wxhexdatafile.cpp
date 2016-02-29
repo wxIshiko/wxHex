@@ -1,5 +1,5 @@
 /*
-	Copyright (c) 2015 Xavier Leclercq
+	Copyright (c) 2015-2016 Xavier Leclercq
 
 	Permission is hereby granted, free of charge, to any person obtaining a
 	copy of this software and associated documentation files (the "Software"),
@@ -20,4 +20,24 @@
 	IN THE SOFTWARE.
 */
 
-#include "wxHexDataFile.h"
+#include "wxhexdatafile.h"
+
+wxHexDataFile::wxHexDataFile(const wxString& path)
+{
+	m_file.Open(path, wxFile::read);
+}
+
+wxHexDataFile::~wxHexDataFile()
+{
+	m_file.Close();
+}
+
+size_t wxHexDataFile::GetLength() const
+{
+	return m_file.Length();
+}
+
+void wxHexDataFile::DoGetBytes(size_t pos, size_t count, unsigned char* buffer)
+{
+	m_file.Read(buffer, count);
+}
