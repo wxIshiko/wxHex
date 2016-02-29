@@ -85,6 +85,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\src\wxhexdata.cpp" />
     <ClCompile Include="..\..\src\wxhexdatabuffer.cpp" />
+    <ClCompile Include="..\..\src\wxhexdatafile.cpp" />
     <ClCompile Include="..\..\src\wxhexdatapanel.cpp" />
     <ClCompile Include="..\..\src\wxhexeditctrl.cpp" />
     <ClCompile Include="..\..\src\wxhexgridctrl.cpp" />
@@ -93,6 +94,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\include\wx\hex\wxhexdata.h" />
     <ClInclude Include="..\..\include\wx\hex\wxhexdatabuffer.h" />
+    <ClInclude Include="..\..\include\wx\hex\wxhexdatafile.h" />
     <ClInclude Include="..\..\include\wx\hex\wxhexdatapanel.h" />
     <ClInclude Include="..\..\include\wx\hex\wxhexeditctrl.h" />
     <ClInclude Include="..\..\include\wx\hex\wxhexgridctrl.h" />
