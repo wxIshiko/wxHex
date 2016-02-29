@@ -1,5 +1,5 @@
 /*
-	Copyright (c) 2015 Xavier Leclercq
+	Copyright (c) 2015-2016 Xavier Leclercq
 
 	Permission is hereby granted, free of charge, to any person obtaining a
 	copy of this software and associated documentation files (the "Software"),
@@ -20,8 +20,8 @@
 	IN THE SOFTWARE.
 */
 
-#include "wxHexDataPanel.h"
-#include "wxHexDataBuffer.h"
+#include "wxhexdatapanel.h"
+#include "wxhexdatabuffer.h"
 #include <wx/dcclient.h>
 #include <wx/caret.h>
 
@@ -31,7 +31,7 @@ wxHexDataPanel::wxHexDataPanel(wxWindow* parent,
 	m_leftMargin(5), m_rightMargin(5), m_topMargin(5), m_bottomMargin(5),
 	m_lineHeight(15)
 {
-	m_data = std::make_shared<wxHexDataBuffer>();
+	m_data = new wxHexDataBuffer();
 	m_count = m_data->GetLength();
 
 	wxCaret *caret = new wxCaret(this, 10, 15);
@@ -40,7 +40,7 @@ wxHexDataPanel::wxHexDataPanel(wxWindow* parent,
 	caret->Show();
 }
 
-void wxHexDataPanel::Init(std::shared_ptr<wxHexData>& data)
+void wxHexDataPanel::Init(wxSharedPtr<wxHexData> data)
 {
 	m_startOffset = 0;
 	m_data = data;

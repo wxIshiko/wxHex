@@ -52,7 +52,7 @@ bool wxHexGridCtrl::AcceptsFocus() const
 	return false;
 }
 
-void wxHexGridCtrl::SetData(wxSharedPtr<wxHexData>& data)
+void wxHexGridCtrl::SetData(wxSharedPtr<wxHexData> data)
 {
 	m_offsets->Init(data->GetLength());
 	m_data->Init(data);
