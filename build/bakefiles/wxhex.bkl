@@ -37,6 +37,7 @@ library wxhex
 
     headers
     {
+        ../../include/wx/hex/wxhex.h
         ../../include/wx/hex/wxhexdata.h
         ../../include/wx/hex/wxhexdatabuffer.h
         ../../include/wx/hex/wxhexdatafile.h

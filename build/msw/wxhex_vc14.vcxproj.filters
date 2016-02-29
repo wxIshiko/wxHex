@@ -17,6 +17,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\wx\hex\wxhex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\include\wx\hex\wxhexdata.h">
       <Filter>Header Files</Filter>
     </ClInclude>

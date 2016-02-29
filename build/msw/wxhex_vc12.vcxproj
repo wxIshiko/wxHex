@@ -92,6 +92,7 @@
     <ClCompile Include="..\..\src\wxhexoffsetspanel.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\include\wx\hex\wxhex.h" />
     <ClInclude Include="..\..\include\wx\hex\wxhexdata.h" />
     <ClInclude Include="..\..\include\wx\hex\wxhexdatabuffer.h" />
     <ClInclude Include="..\..\include\wx\hex\wxhexdatafile.h" />
